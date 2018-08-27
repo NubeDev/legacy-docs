@@ -7,7 +7,7 @@
 			"size": 2
 		},
 		"github": {
-			"url": "https://github.com/pycom"
+			"url": "https://github.com/alepycom"
 		},
 		"lunr" : {
 			"maxIndexSize": 1000000000
