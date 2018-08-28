@@ -16,7 +16,7 @@ Libraries for the rest of the components will be added soon.
 - **RFID/NFC reader**: NXP MFRC63002HN, 151
 
 ### Driver
-The Windows 7 driver for Pyscan is located in: https://docs.pycom.io/chapter/pytrackpysense/installation/drivers.html
+The Windows 7 driver for Pyscan is located [here](../../pytrackpysense/installation/drivers.md)
 For other Operating Systems there's no driver required.
 
 ### Pinout

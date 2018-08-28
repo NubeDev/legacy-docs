@@ -23,7 +23,7 @@ Create an Alarm object.
 
 - `handler`: will be called after the interval has elapsed. If set to `None`, the alarm will be disabled after creation.
 - `arg`: an optional argument can be passed to the callback handler function. If `None` is specified, the function will receive the object that triggered the alarm.
-- `s, ms, us`: the interval can be specified in seconds (float), miliseconds (integer) or microseconds (integer). Only one at a time can be specified.
+- `s, ms, us`: the interval can be specified in seconds (float), milliseconds (integer) or microseconds (integer). Only one at a time can be specified.
 - `periodic`: an alarm can be set to trigger repeatedly by setting this parameter to `True`.
 
 ### Methods
@@ -117,5 +117,5 @@ clock = Clock()
 ```
 
 {% hint style='info' %}
-For more information on how Pycom’s products handle interrupts, see [notes](../../../toolsandfeatures/notes.md).
+For more information on how Pycom’s products handle interrupts, see [notes](../../../firmwareapi/notes.md).
 {% endhint %}

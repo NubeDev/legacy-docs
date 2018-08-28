@@ -80,7 +80,6 @@
     * [4.3.6 LoRaWAN Nano-Gateway](chapter/tutorials/lora/lorawan-nano-gateway.md)
     * [4.3.7 RN2483 to LoPy](chapter/tutorials/lora/537-rn2483-to-lopy.md)
 * [4.4 Sigfox Examples](chapter/tutorials/sigfox/README.md)
-    * [4.4.1 Disengage Sequence Number](chapter/tutorials/sigfox/disengage_seq_num.md)
 * [4.5 LTE Examples](chapter/tutorials/lte/README.md)
     * [4.5.1 CAT-M1](chapter/tutorials/lte/cat_m1.md)
     * [4.5.2 NB-IoT](chapter/tutorials/lte/nb_iot.md)
@@ -143,6 +142,7 @@
     * [5.3.18 ustruct](chapter/firmwareapi/micropython/ustruct.md)
     * [5.3.19 _thread](chapter/firmwareapi/micropython/_thread.md)
     * [5.3.20 Builtin](chapter/firmwareapi/micropython/builtin.md)
+* [5.4 Notes](chapter/firmwareapi/notes.md)
 
 ## 6. Product Info
 * [6.0 Introduction](chapter/datasheets/README.md)
