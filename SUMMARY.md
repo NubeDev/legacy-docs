@@ -71,6 +71,7 @@
     * [4.2.14 Modbus](chapter/tutorials/all/modbus.md)
     * [4.2.15 OTA update](chapter/tutorials/all/ota.md)
     * [4.2.16 RMT](chapter/tutorials/all/rmt.md)
+    * [4.2.17 Socket](chapter/tutorials/all/socket.md)
 * [4.3 LoRa Examples](chapter/tutorials/lora/README.md)
     * [4.3.1 LoRa-MAC (Raw LoRa)](chapter/tutorials/lora/lora-mac.md)
     * [4.3.2 LoRaWAN with OTAA](chapter/tutorials/lora/lorawan-otaa.md)
@@ -79,6 +80,7 @@
     * [4.3.5 LoPy to LoPy](chapter/tutorials/lora/module-module.md)
     * [4.3.6 LoRaWAN Nano-Gateway](chapter/tutorials/lora/lorawan-nano-gateway.md)
     * [4.3.7 RN2483 to LoPy](chapter/tutorials/lora/537-rn2483-to-lopy.md)
+    * [4.3.8 LoRa Mesh](chapter/tutorials/lora/lora-mesh.md)
 * [4.4 Sigfox Examples](chapter/tutorials/sigfox/README.md)
 * [4.5 LTE Examples](chapter/tutorials/lte/README.md)
     * [4.5.1 CAT-M1](chapter/tutorials/lte/cat_m1.md)
@@ -140,8 +142,9 @@
     * [5.3.16 ussl](chapter/firmwareapi/micropython/ussl.md)
     * [5.3.17 ucrypto](chapter/firmwareapi/micropython/ucrypto.md)
     * [5.3.18 ustruct](chapter/firmwareapi/micropython/ustruct.md)
-    * [5.3.19 _thread](chapter/firmwareapi/micropython/_thread.md)
-    * [5.3.20 Builtin](chapter/firmwareapi/micropython/builtin.md)
+    * [5.3.19 uzlib](chapter/firmwareapi/micropython/uzlib.md)
+    * [5.3.20 _thread](chapter/firmwareapi/micropython/_thread.md)
+    * [5.3.21 Builtin](chapter/firmwareapi/micropython/builtin.md)
 * [5.4 Notes](chapter/firmwareapi/notes.md)
 
 ## 6. Product Info

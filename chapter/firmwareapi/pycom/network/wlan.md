@@ -43,7 +43,7 @@ The WLAN constructor is special in the sense that if no arguments besides the `i
 
 ### Methods
 
-#####<function>wlan.init(mode, * , ssid=None, auth=None, channel=1, antenna=None, power_save=False, hidden=False)</function>
+#####<function>wlan.init(mode, * , ssid=None, auth=None, channel=1, antenna=None, power_save=False, hidden=False, bandwidth=HT40)</function>
 
 Set or get the WiFi network processor configuration.
 
@@ -57,6 +57,7 @@ Arguments are:
 - `antenna` selects between the internal and the external antenna. Can be either <constant>WLAN.INT_ANT</constant>, <constant>WLAN.EXT_ANT</constant>. With our development boards it defaults to using the internal antenna, but in the case of an OEM module, the antenna pin (`P12`) is not used, so it’s free to be used for other things.
 - `power_save` enables or disables power save functions in STA mode.
 - `hidden` only valid in <constant>WLAN.AP</constant> mode to create an access point with a hidden SSID when set to `True`.
+- `bandwidth` is the Bandwidth to use, either 20MHz or 40 MHz, use `HT20` or `HT40`
 
 For example, you can do:
 
@@ -76,7 +77,7 @@ wlan.init(mode=WLAN.STA)
 
 Disables the WiFi radio.
 
-#####<function>wlan.connect(ssid, * , auth=None, bssid=None, timeout=None, ca_certs=None, keyfile=None, certfile=None, identity=None)</function>
+#####<function>wlan.connect(ssid, * , auth=None, bssid=None, timeout=None, ca_certs=None, keyfile=None, certfile=None, identity=None, hostname=None)</function>
 
 Connect to a wifi access point using the given SSID, and other security parameters.
 
@@ -89,6 +90,7 @@ Connect to a wifi access point using the given SSID, and other security paramete
 - `keyfile` is the path to the client key. Only used if `username` and `password` are not part of the `auth` tuple.
 - `certfile` is the path to the client certificate. Only used if `username` and `password` are not part of the `auth` tuple.
 - `identity` is only used in case of <constant>WLAN.WPA2_ENT</constant> security. Needed by the server.
+- `hostname` is the name of the host connecting to the AP. Max length of name string is 32 Bytes
 
 {% hint style='info' %}
 The ESP32 only handles certificates with `pkcs8` format (but not the "Traditional SSLeay RSAPrivateKey" format). The private key should be RSA coded with 2048 bits at maximum.
@@ -144,16 +146,17 @@ Get or set the antenna type (external or internal).
 
 Get a 6-byte long `bytes` object with the WiFI MAC address.
 
+#####<function>wlan.bandwidth()</function>
+
+Set the bandwidth of the wifi, either 20 MHz or 40 MHz can be configured, use constants `HT20` or `HT40`
+
+#####<function>wlan.hostname()</function>
+
+Set the Host name of the device connecting to the AP in case of WiFi `mode=WLAN.STA`, in case of `mode=WLAN.AP` this is the name of the host hosting the AP. Max length of name string is 32 Bytes
+
 ### Constants
 
-<constant>WLAN.STA</constant> <constant>WLAN.AP</constant> <constant>WLAN.STA_AP</constant>
-
-WLAN mode
-
-<constant>WLAN.WEP</constant> <constant>WLAN.WPA</constant> <constant>WLAN.WPA2</constant> <constant>WLAN.WPA2_ENT</constant>
-
-WLAN network security
-
-<constant>WLAN.INT_ANT</constant> <constant>WLAN.EXT_ANT</constant>
-
-Antenna type
+- WLAN mode: <constant>WLAN.STA</constant> <constant>WLAN.AP</constant> <constant>WLAN.STA_AP</constant>
+- WLAN network security: <constant>WLAN.WEP</constant> <constant>WLAN.WPA</constant> <constant>WLAN.WPA2</constant> <constant>WLAN.WPA2_ENT</constant>
+- Antenna type: <constant>WLAN.INT_ANT</constant> <constant>WLAN.EXT_ANT</constant>
+- WLAN Bandwidth: </constant>WLAN.HT20</constant>, <constant>WLAN.HT40</constant>
