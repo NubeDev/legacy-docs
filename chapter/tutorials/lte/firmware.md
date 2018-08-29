@@ -17,7 +17,7 @@ Most importantly, the updater is now integrated in the latest stable firmware re
 Please start with the following steps:
 
 1. Upgrade the Pycom Firmware Updater tool to latest version
-2. Select Firmware Type Stable in the communication window to upgrade to version `v1.18.1.r1`
+2. Select Firmware Type `stable` in the communication window to upgrade to version `v1.18.1.r1`
 
 
 You can find the different versions of firmwares available here:
@@ -56,7 +56,7 @@ import sqnsupgrade
 sqnsupgrade.run('/sd/CATM1-38638.dup','/sd/updater.elf')
 ```
 
-To flash the NB-IOT firmware onto your device:
+To flash the NB-IoT firmware onto your device:
 
 ```python
 import sqnsupgrade
